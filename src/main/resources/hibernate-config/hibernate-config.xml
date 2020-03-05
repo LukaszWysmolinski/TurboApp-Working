@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/turbodb</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+      <mapping class="com.turbogroup.turboapp.model.AddressEntity"/>
+      <mapping class="com.turbogroup.turboapp.model.CustomerEntity"/>
+      <mapping class="com.turbogroup.turboapp.model.OrderNameEntity"/>
+      <mapping class="com.turbogroup.turboapp.model.PartsEntity"/>
+      <mapping class="com.turbogroup.turboapp.model.ReasonEntity"/>
+      <mapping class="com.turbogroup.turboapp.model.StatusEntity"/>
+      <mapping class="com.turbogroup.turboapp.model.TurbochargerEntity"/>
+      <mapping class="com.turbogroup.turboapp.model.WorkOrderEntity"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
