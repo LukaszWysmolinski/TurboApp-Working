@@ -20,7 +20,6 @@ public class OrderName {
         this.id = id;
     }
 
-    @Basic                                          // @Basic means >not null< column
     @Column(name = "order_date")
     public Timestamp getOrderDate() {
         return orderDate;
@@ -30,7 +29,6 @@ public class OrderName {
         this.orderDate = orderDate;
     }
 
-    @Basic
     @Column(name = "status")
     public Integer getStatus() {
         return status;

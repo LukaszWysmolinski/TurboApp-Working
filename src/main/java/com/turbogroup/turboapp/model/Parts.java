@@ -18,7 +18,6 @@ public class Parts {
         this.id = id;
     }
 
-    @Basic
     @Column(name = " name")
     public String getName() {
         return name;

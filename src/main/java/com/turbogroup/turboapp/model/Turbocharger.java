@@ -23,11 +23,7 @@ public class Turbocharger {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-//    @Basic
+    //    @Basic
     @Column(name = "number")
     public String getNumber() {
         return number;
@@ -37,7 +33,7 @@ public class Turbocharger {
         this.number = number;
     }
 
-//    @Basic
+    //    @Basic
     @Column(name = "model")
     public String getModel() {
         return model;
@@ -47,7 +43,7 @@ public class Turbocharger {
         this.model = model;
     }
 
-//    @Basic
+    //    @Basic
     @Column(name = "producer")
     public String getProducer() {
         return producer;

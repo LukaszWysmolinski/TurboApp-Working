@@ -23,7 +23,6 @@ public class Customer {
         this.id = id;
     }
 
-    @Basic
     @Column(name = "name")
     public String getName() {
         return name;
@@ -33,7 +32,6 @@ public class Customer {
         this.name = name;
     }
 
-    @Basic
     @Column(name = "last_name")
     public String getLastName() {
         return lastName;
@@ -43,7 +41,6 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    @Basic
     @Column(name = "telephone")
     public String getTelephone() {
         return telephone;
@@ -53,7 +50,6 @@ public class Customer {
         this.telephone = telephone;
     }
 
-    @Basic
     @Column(name = "email")
     public String getEmail() {
         return email;
@@ -63,7 +59,6 @@ public class Customer {
         this.email = email;
     }
 
-    @Basic
     @Column(name = "company_name")
     public String getCompanyName() {
         return companyName;
@@ -73,7 +68,6 @@ public class Customer {
         this.companyName = companyName;
     }
 
-    @Basic
     @Column(name = "nip")
     public String getNip() {
         return nip;
