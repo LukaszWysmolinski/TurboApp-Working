@@ -21,19 +21,19 @@ public class WorkOrder {
     private Turbocharger turbocharger;
 
     @ManyToOne
-    @JoinColumn(name="part_id")
+    @JoinColumn(name = "part_id")
     private Parts part;
 
     @ManyToOne
-    @JoinColumn(name="reason_id")
+    @JoinColumn(name = "reason_id")
     private Reason reason;
 
     @ManyToOne
-    @JoinColumn(name="customer_id")
+    @JoinColumn(name = "customer_id")
     private Customer customer;
 
     @ManyToOne
-    @JoinColumn(name="order_id")
+    @JoinColumn(name = "order_id")
     private OrderName order;
 
 
