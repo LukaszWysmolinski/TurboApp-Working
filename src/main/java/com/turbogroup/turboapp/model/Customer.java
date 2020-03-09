@@ -5,16 +5,23 @@ import javax.persistence.*;
 @Entity
 @Table(name = "customer", schema = "turbodb")
 public class Customer {
-    private Long id;
-    private String name;
-    private String lastName;
-    private String telephone;
-    private String email;
-    private String companyName;
-    private String nip;
-
     @Id
     @Column(name = "id")
+    private Long id;
+    @Column(name = "name")
+    private String name;
+    @Column(name = "last_name")
+    private String lastName;
+    @Column(name = "telephone")
+    private String telephone;
+    @Column(name = "email")
+    private String email;
+    @Column(name = "company_name")
+    private String companyName;
+    @Column(name = "nip")
+    private String nip;
+
+
     public Long getId() {
         return id;
     }
@@ -23,7 +30,6 @@ public class Customer {
         this.id = id;
     }
 
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -32,7 +38,6 @@ public class Customer {
         this.name = name;
     }
 
-    @Column(name = "last_name")
     public String getLastName() {
         return lastName;
     }
@@ -41,7 +46,6 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    @Column(name = "telephone")
     public String getTelephone() {
         return telephone;
     }
@@ -50,7 +54,6 @@ public class Customer {
         this.telephone = telephone;
     }
 
-    @Column(name = "email")
     public String getEmail() {
         return email;
     }
@@ -59,7 +62,6 @@ public class Customer {
         this.email = email;
     }
 
-    @Column(name = "company_name")
     public String getCompanyName() {
         return companyName;
     }
@@ -68,7 +70,6 @@ public class Customer {
         this.companyName = companyName;
     }
 
-    @Column(name = "nip")
     public String getNip() {
         return nip;
     }

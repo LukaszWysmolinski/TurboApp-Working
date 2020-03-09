@@ -8,6 +8,8 @@ import java.sql.Timestamp;
 public class OrderName {
     private Long id;
     private Timestamp orderDate;
+
+    @JoinColumn(name = "status")
     private Integer status;
 
     @Id
@@ -29,7 +31,6 @@ public class OrderName {
         this.orderDate = orderDate;
     }
 
-    @Column(name = "status")
     public Integer getStatus() {
         return status;
     }
